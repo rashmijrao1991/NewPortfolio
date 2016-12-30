@@ -19,13 +19,21 @@
 }
 
 .mydiscription{
-	font-family: Palatino, serif;
-	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 17px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 30px;
 	margin:5% 5% 5% 5%;
+}
+
+.mytabs{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
 }
 
 .mysearchbox{
