@@ -13,10 +13,10 @@ angular.module('module1',[
 
 
 	$scope.myimages=[
-	{"id":0,"name":"/Users/rashmijrao/Documents/New_Portfolio/images/img4.jpg","category":"About Me"},
-	{"id":1,"name":"/Users/rashmijrao/Documents/New_Portfolio/images/img3.jpg","category":"Projects"},
-	{"id":2,"name":"/Users/rashmijrao/Documents/New_Portfolio/images/img5.jpg","category":"Work Experience"},
-	{"id":3,"name":"/Users/rashmijrao/Documents/New_Portfolio/images/img6.jpg","category":"Resume"}
+	{"id":0,"name":"http://rashmijrao.com/images/img4.jpg","category":"About Me"},
+	{"id":1,"name":"http://rashmijrao.com/images/img3.jpg","category":"Projects"},
+	{"id":2,"name":"http://rashmijrao.com/images/img5.jpg","category":"Work Experience"},
+	{"id":3,"name":"http://rashmijrao.com/images/img6.jpg","category":"Resume"}
 	]; 
 
 	$scope.myprojects=[
@@ -55,7 +55,7 @@ angular.module('module1',[
 
 	function setCurrentCategory(category){
 		$scope.currentCategory=category;
-		$.backstretch("/Users/rashmijrao/Documents/New_Portfolio/images/"+category.name+".jpg");
+		$.backstretch("http://rashmijrao.com/images/"+category.name+".jpg");
 	}
 
 	function isCurrentCategory(category){
