@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="module1">
+<head>
+  <title>Rashmi Rao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/Users/rashmijrao/Documents/New_Portfolio/css/my-style.css" media="screen">
+  <script src="/Users/rashmijrao/Documents/New_Portfolio/js/jquery.backstretch.min.js"></script>
+  <script src="/Users/rashmijrao/Documents/New_Portfolio/app/module1.start.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body ng-controller="MainCtrl">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89621907-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="container">
+  <div class="row absolute-example">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li ng-repeat="category in categories" ng-class="{'active':isCurrentCategory(category)}">
+        <a href="#" ng-click="setCurrentCategory(category)"> {{category.name}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+  <div ng-show="isCurrentCategoryName('About Me')">
+    <script>
+    $.backstretch("/Users/rashmijrao/Documents/New_Portfolio/images/About me.jpg");
+    </script>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="mypic" src="/Users/rashmijrao/Documents/New_Portfolio/images/geekypic.jpg">
+        <p class="mydiscription">Connect with me: <a href="mailto:rao.307@osu.edu?Subject=Fulltime Opportnity at " style="text-decoration:none;" target="_top">rao.307@osu.edu</a> </p>
+        <a href="https://www.linkedin.com/in/rashmi-rao-945a4946" target='_blank' class="fa fa-linkedin-square" style="font-size:48px;color:rgb( 0, 123, 181)"></a> 
+        <a href="https://twitter.com/9rashmi18" target='_blank' class="fa fa-twitter-square" style="font-size:48px;color:rgb(0,132,180)"></a>
+        <a href="https://www.facebook.com/rashmi.rao9" target='_blank'  class="fa fa-facebook-official" style="font-size:48px;color:rgb(59,89,152)"></a>
+        <a href="" class="fa fa-github" target='_blank'  style="font-size:48px;color:rgb(0, 0, 0)"></a>
+
+      </div>
+      <div class="col-lg-6">
+        <p class="mydiscription"> Hello!!!!<br>
+Thank you for your interest to know me! Just a brief intro, I'm Rashmi Rao, a graduate student in Computer Science Engineering at <br>The Ohio State University, <br>  
+a tech geek, a coder and above all an enthusiastic learner.<br> Currently I'm looking out for a fulltime job opportunity to use and enhance my skills. I'll be graduating in May 2017 <br>
+I love to design and create web pages (You are viewing my state of art website developed using angular and nodjs, hosted on Amazon Web Services. PS: I know you viewed my page! Thanks to Google Analytics!)<br>
+My core expertise is in Web Application developement. Recently I started my research in Data Science. Wireless Sensor Networks and IOT are some of my other interests too!<br><br>
+Hmm is there anything else I can do?<br> Well there's some <a target='_blank' href="https://www.facebook.com/Rao-Photography-1444412939151865/?fref=ts">Photography</a>, <a target='_blank' href="http://www.almypoems.blogspot.com">Poetry Writing</a> and  <a target='_blank' href="https://soundcloud.com/rashmijrao">Singing</a> too!  </p>
+      </div> 
+    </div>
+        </div>
+        <div ng-show="isCurrentCategoryName('Projects')">
+          <div class="row">
+
+          <div class="form-group col-lg-6 mysearchbox">
+  <label for="usr">Looking for a specific technology? Searching made easy!</label>
+  <input type="text" class="form-control" id="usr" ng-model="searchme" placeholder="Eg: Java">
+</div>
+
+             <ul >
+  <li ng-repeat="project in myprojects | filter:searchme" class="form-group col-lg-8 mydiscription">
+   <p> <b>{{project.name}}</b> <br>{{project.desc}}<br><b> Skills: </b> {{project.tags}}
+  </li>
+</ul>
+        </div>
+      </div>
+        <div ng-show="isCurrentCategoryName('Work Experience')">
+          <div class="mydiscription text-left">
+            <h3>Company: Cisco Systems</h3><h3>Software Engineer (2 years)</h3><h4> Skills: Java,  JavaScript, Jquery, Spring, Hibernate, Continuous Integration, Agile, Jenkins, Rally, CSS3, HTML5, Hadoop 2 </h4>
+             <ul>
+              <li >
+                  Developed enterprise web application tools, front and back end in Spring framework. </li><li>
+Integrated the workflow of the tools and corresponding data from the initiation of a Product Release to its end customer marketing. As a part of this project, have worked with all parts of the MVC (Model View Controller) model and Agile product development methodology. </li><li>
+Worked on Big data analytics project aiming at solving data interpretation problems and coming up with innovative analytics for the data from multiple services along with presenting relevant business analytics to various levels of management. Also involved in implementation through map reduce programs. </li><li>
+Developed RESTful APIs for required services and worked with high level deployment processes on cisco.com. </li><li>
+Handled the web security issues such as cross site scripting and sql injection vulnerabilities for the external customer facing sites.
+
+              </li>
+             </ul>
+           </div>
+        </div>
+  <div ng-show="isCurrentCategoryName('Resume')">
+          <div class="mydiscription text-left">
+            <h3> You can download my Resume from the icon on the top right of the view or  <a href="/Users/rashmijrao/Documents/New_Portfolio/Resume_SDE.pdf">here</a></h3>
+          <object data="/Users/rashmijrao/Documents/New_Portfolio/Resume_SDE.pdf" type="application/pdf" width="100%" height="500px">
+          </object>
+            
+           </div>
+        </div>
+
+ 
+</div>
+</div>
+</body>
+</html>
+
