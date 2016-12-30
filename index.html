@@ -31,7 +31,7 @@
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li ng-repeat="category in categories" ng-class="{'active':isCurrentCategory(category)}">
-        <a href="#" ng-click="setCurrentCategory(category)"> {{category.name}}</a>
+        <a href="#" ng-click="setCurrentCategory(category)"  class="mytabs"> {{category.name}}</a>
       </li>
     </ul>
   </div>
@@ -66,7 +66,7 @@ Hmm is there anything else I can do?<br> Well there's some <a target='_blank' hr
           <div class="row">
 
           <div class="form-group col-lg-6 mysearchbox">
-  <label for="usr">Looking for a specific technology? Searching made easy!</label>
+  <label for="usr" class="mydiscription">Looking for a specific technology? Searching made easy!</label>
   <input type="text" class="form-control" id="usr" ng-model="searchme" placeholder="Eg: Java">
 </div>
 
