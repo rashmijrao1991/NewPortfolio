@@ -56,6 +56,7 @@ angular.module('module1',[
 	function setCurrentCategory(category){
 		$scope.currentCategory=category;
 		$.backstretch("http://rashmijrao.com/images/"+category.name+".jpg");
+		console.log("setting current category to "+category.name);
 	}
 
 	function isCurrentCategory(category){
