@@ -13,10 +13,10 @@ angular.module('module1',[
 
 
 	$scope.myimages=[
-	{"id":0,"name":"http://www.rashmijrao1991.github.io/images/img4.jpg","category":"About Me"},
-	{"id":1,"name":"http://www.rashmijrao1991.github.io/images/img3.jpg","category":"Projects"},
-	{"id":2,"name":"http://www.rashmijrao1991.github.io/images/img5.jpg","category":"Work Experience"},
-	{"id":3,"name":"http://www.rashmijrao1991.github.io/images/img6.jpg","category":"Resume"}
+	{"id":0,"name":"https://rashmijrao1991.github.io/images/img4.jpg","category":"About Me"},
+	{"id":1,"name":"https://rashmijrao1991.github.io/images/img3.jpg","category":"Projects"},
+	{"id":2,"name":"https://rashmijrao1991.github.io/images/img5.jpg","category":"Work Experience"},
+	{"id":3,"name":"https://rashmijrao1991.github.io/images/img6.jpg","category":"Resume"}
 	]; 
 
 	$scope.myprojects=[
@@ -55,7 +55,7 @@ angular.module('module1',[
 
 	function setCurrentCategory(category){
 		$scope.currentCategory=category;
-		$.backstretch("http://www.rashmijrao1991.github.io/images/"+category.name+".jpg");
+		$.backstretch("https://rashmijrao1991.github.io/images/"+category.name+".jpg");
 		console.log("setting current category to "+category.name);
 	}
 
